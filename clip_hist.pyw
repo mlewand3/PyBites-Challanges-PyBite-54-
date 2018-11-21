@@ -48,7 +48,7 @@ def clipboard_to_file():
 def show_history():
     '''For showing history
     '''
-    startfile('C:/Clipboard_history')                      #opening folder with history
+    startfile('C:/Clipboard_history')                          #opening folder with history
 
 class Program(Frame):
     '''Main window content
@@ -63,18 +63,18 @@ class Program(Frame):
         self.pack(fill=BOTH, expand=True)                      #window place and stuff
 
         showHistoryButton = Button(self,                       #setting button
-        	                    text="Show Clipboard History", #text on button
-        	                    command = show_history)        #function which is activated
+                                text="Show Clipboard History", #text on button
+                                command = show_history)        #function which is activated
 
         showHistoryButton.place(relx=0.5,                      #setting button on 0,5 of x-axis 
-        	                    rely=0.5,                      #setting button on 0,5 of y-axis
-        	                    anchor=CENTER)                 #gluing it to center
+                                rely=0.5,                      #setting button on 0,5 of y-axis
+                                anchor=CENTER)                 #gluing it to center
 
         status = Label(self.master,                            #setting status bar
-        	            text="I`m listening...",               #status bar text
-        	            bd=1,                                  #status bar border value
-        	            relief=SUNKEN,                         #setting its visuals
-        	            anchor=E)                              #gluing text to right side of bar
+                        text="I`m listening...",               #status bar text
+                        bd=1,                                  #status bar border value
+                        relief=SUNKEN,                         #setting its visuals
+                        anchor=E)                              #gluing text to right side of bar
 
         status.pack(side=BOTTOM, fill=X)                       #placing status bar
         
@@ -92,8 +92,4 @@ def main():
     twindow.mainloop()                                         #window loop 
 
 if __name__ == '__main__':                                     #let`s start this shit
-    main() 
-
-
-
- 
+    main()
